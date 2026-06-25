@@ -70,3 +70,32 @@ body {
 
 }
 .btn-logout:hover { background-color: #bd2130; }
+/* Estilos para los formularios */
+#register-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.btn-submit {
+    background-color: #4285F4;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.btn-submit:hover { background-color: #357ae8; }
+
+a {
+    color: #4285F4;
+    text-decoration: none;
+}
+a:hover { text-decoration: underline; }
