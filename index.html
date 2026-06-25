@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Empleados</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <section id="login-screen" class="container">
+        <h1>Bienvenido al Sistema de Empleados</h1>
+        <button id="btn-google-login" class="btn-google">
+            <img src="img/google.jpg" alt="Google logo" width="20">
+            Iniciar sesión con Google
+        </button>
+    </section>
+
+    <section id="dashboard-screen" class="container hidden">
+        <header class="dashboard-header">
+            <h2>Panel Principal del Empleado</h2>
+            <button id="btn-logout" class="btn-logout">Cerrar Sesión</button>
+        </header>
+        
+        <div class="employee-card">
+            <h3>Datos del Usuario</h3>
+            <p><strong>ID Empleado:</strong> <span id="emp-id">-[Cargando]-</span></p>
+            <p><strong>Nombre Completo:</strong> <span id="emp-fullname">-[Cargando]-</span></p>
+            <p><strong>Correo Electrónico:</strong> <span id="emp-email">-[Cargando]-</span></p>
+            <p><strong>Sueldo Actual:</strong> $<span id="emp-salary">-[Cargando]-</span></p>
+        </div>
+    </section>
+
+    <script src="funcion.js"></script>
+</body>
+</html>
