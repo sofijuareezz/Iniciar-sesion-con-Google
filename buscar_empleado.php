@@ -3,7 +3,7 @@
 $host = "localhost";
 $user = "root";       // Cambiá por tu usuario de MySQL (por defecto suele ser root)
 $pass = "";           // Cambiá por tu contraseña de MySQL
-$db   = "tu_base_de_datos"; // Escribí acá el nombre de tu base de datos
+$db   = "login_reitchert"; // Escribí acá el nombre de tu base de datos
 
 $conn = new mysqli($host, $user, $pass, $db);
 
