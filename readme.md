@@ -4,7 +4,7 @@
 
 Este proyecto consiste en un **Portal de Recibos de Sueldo** desarrollado para la empresa *Tecnologías del Atlántico S.A.* El sistema permite a los empleados consultar de forma segura y confidencial sus datos personales y laborales (ID, Nombre, Apellido, Correo Electrónico y Sueldo Actual). 
 
-La autenticación está delegada en Google mediante **Google Identity Services (OAuth 2.0)**, garantizando que solo los usuarios con un correo electrónico institucional o registrado previamente en la base de datos de la empresa puedan acceder a la información protegida, eliminando la necesidad de gestionar contraseñas locales.
+La autenticación está delegada en Google mediante **Google Identity Services (OAuth 2.0)**, garantizando que solo los usuarios con un correo electrónico registrado previamente en la base de datos de la empresa puedan acceder a la información protegida, eliminando la necesidad de gestionar contraseñas locales.
 
 ---
 
@@ -44,8 +44,9 @@ CREATE TABLE `datos_empleado` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO `datos_empleado` (`Nombre`, `Apellido`, `Correo electronico`, `Sueldo`) VALUES
-('Baltazar', 'López', 'baltazarlopez403@gmail.com', 750000.00),
-('Rodrigo', 'Gómez', 'rodriguito@gmail.com', 680000.00);
+('', '', '', $),
+En los espacios libres, ponga su nombre, apellido y correo electrónico en ese orden. Al final, en el "$", ponga su sueldo.
+
 
 4. Configuración
 
@@ -114,11 +115,13 @@ Panel de Datos del Empleado (Dashboard)
 Descripción: Panel privado que muestra de manera dinámica la información confidencial extraída de la base de datos tras un login exitoso.
 
 # 8. Integrantes
+
 Baltazar López - Programador 1.
 
 Joaquin Calandroni - Programador 1 porque no nos gusta competir.
 
 Sofia Juarez - README.MD
+
 9. Dificultades encontradas y Soluciones
 Error 400: origin_mismatch (Google OAuth):
 
