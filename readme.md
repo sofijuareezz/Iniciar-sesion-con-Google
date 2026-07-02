@@ -1,13 +1,15 @@
-# Portal de Recibos de Sueldo - Tecnologías del Atlántico .A.
+# Portal de Recibos de Sueldo - Tecnologías del Atlántico S.A.
 
-## 1. Descripción del proyecto
+1. Descripción del proyecto
+
 Este proyecto consiste en un **Portal de Recibos de Sueldo** desarrollado para la empresa *Tecnologías del Atlántico S.A.* El sistema permite a los empleados consultar de forma segura y confidencial sus datos personales y laborales (ID, Nombre, Apellido, Correo Electrónico y Sueldo Actual). 
 
 La autenticación está delegada en Google mediante **Google Identity Services (OAuth 2.0)**, garantizando que solo los usuarios con un correo electrónico institucional o registrado previamente en la base de datos de la empresa puedan acceder a la información protegida, eliminando la necesidad de gestionar contraseñas locales.
 
 ---
 
-## 2. Requisitos previos
+2. Requisitos previos
+
 Para ejecutar e instalar este proyecto localmente, se requiere lo siguiente:
 *   **Servidor Web Local:** XAMPP, WampServer o Laragon (con soporte para PHP y MySQL).
 *   **Versión de PHP:** 7.4 o superior recomendado.
@@ -18,7 +20,8 @@ Para ejecutar e instalar este proyecto localmente, se requiere lo siguiente:
 
 ---
 
-## 3. Instalación
+3. Instalación
+
 Siga estos pasos para clonar y poner en marcha el sistema en un entorno local:
 
 1.  **Descargar o clonar el proyecto:**
@@ -43,7 +46,9 @@ CREATE TABLE `datos_empleado` (
 INSERT INTO `datos_empleado` (`Nombre`, `Apellido`, `Correo electronico`, `Sueldo`) VALUES
 ('Baltazar', 'López', 'baltazarlopez403@gmail.com', 750000.00),
 ('Rodrigo', 'Gómez', 'rodriguito@gmail.com', 680000.00);
-## 4. Configuración
+
+4. Configuración
+
 Creación del proyecto en Google Cloud y Obtención del Client ID
 Para que el inicio de sesión funcione con su propio entorno, debe configurar las credenciales en Google:
 
@@ -77,7 +82,7 @@ $host = "localhost";
 $user = "root";       // Su usuario de MySQL
 $pass = "";           // Su contraseña de MySQL
 $db   = "login_reitchert"; 
-5. Ejecución
+# 5. Ejecución
 Asegúrese de acceder al proyecto utilizando una URL de servidor local válida (no abrir el archivo HTML haciendo doble clic directamente).
 
 Abra su navegador e ingrese a: http://localhost/portal-recibos/index.html (o el nombre que le haya asignado a la carpeta).
@@ -97,8 +102,10 @@ portal-recibos/
 ├── funcion.js          # Lógica en JS: Captura el token de Google, lo decodifica y consume la API local
 ├── buscar_empleado.php # Backend en PHP: Conecta a MySQL y valida la existencia del correo vía JSON
 └── README.md           # Documentación técnica obligatoria del sistema (este archivo)
+
 7. Capturas de pantalla
-(Nota: Recuerde guardar las imágenes en la carpeta de su proyecto y reemplazar los nombres de archivo por las rutas reales para que se visualicen en GitHub/GitLab)
+
+Están en la carpeta "img". 
 
 Pantalla de Inicio de Sesión (Login)
 Descripción: Interfaz de bienvenida corporativa con el botón oficial de Google Identity Services configurado con estilo Pill y Outline.
@@ -106,11 +113,12 @@ Descripción: Interfaz de bienvenida corporativa con el botón oficial de Google
 Panel de Datos del Empleado (Dashboard)
 Descripción: Panel privado que muestra de manera dinámica la información confidencial extraída de la base de datos tras un login exitoso.
 
-8. Integrantes
-[Nombre y Apellido] - [Legajo / Rol en el grupo]
+# 8. Integrantes
+Baltazar López - Programador 1.
 
-[Nombre y Apellido] - [Legajo / Rol en el grupo]
+Joaquin Calandroni - Programador 1 porque no nos gusta competir.
 
+Sofia Juarez - README.MD
 9. Dificultades encontradas y Soluciones
 Error 400: origin_mismatch (Google OAuth):
 
